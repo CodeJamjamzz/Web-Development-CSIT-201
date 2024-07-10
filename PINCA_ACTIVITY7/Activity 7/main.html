@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PINCA_Activity 7</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+
+        <header>DYNAMICALLY ADDED ROWS USING JS</header>
+    
+        <div class="container">
+            <form id="userForm">
+                <h1>Input User Information</h1>
+
+                <div class="inner">
+                    <label for="FirstName"><b>First Name:</b></label><br>
+                    <input type="text" id="FirstName" placeholder="Enter First Name" autocomplete="off">
+                    <small class="error-message" id="FirstNameError"></small>
+                </div>
+                <div class="inner">
+                    <label for="LastName"><b>Last Name:</b></label><br>
+                    <input type="text" id="LastName" placeholder="Enter Last Name" autocomplete="off">
+                    <small class="error-message" id="LastNameError"></small>
+                </div>
+
+            <div class="row2">
+                <div class="gen">
+                    <label for="Gender"><b>Gender:</b></label><br>
+                    <input type="radio" name="Gender" value="Female" id="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" value="Male" id="Male">
+                    <label for="Male">Male</label><br>
+                    <small class="error-message" id="GenderError"></small>
+                </div>
+                <div class="inner">
+                    <label for="Birthday"><b>Date of Birth:</b></label><br>
+                    <input type="date" id="Birthday">
+                    <small class="error-message" id="BirthdayError"></small><br>
+                </div>
+            </div>
+
+            
+                <button id="submit" type="submit" class="sub">SUBMIT</button>
+                <button id="cancel" type="button" class="cel">CANCEL</button>
+            </form>
+        </div>
+
+        <h3>USER INFORMATION TABLE</h3>
+        <table id="userTable">
+            <tr>
+              <td><b>First Name</b></td>
+              <td><b>Last Name</b></td>
+              <td><b>Gender</b></td>
+              <td><b>Date of Birth</b></td>
+            </tr>
+        </table>
+
+        <script src="script.js">
+        </script>
+    </body>
+</html>

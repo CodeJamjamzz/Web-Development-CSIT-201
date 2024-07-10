@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity 4</title>
+	<style>
+		form {
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 50px;
+		}
+
+		fieldset {
+			padding: 18px;
+			border: solid 3px #3B3017;
+			border-radius: 6px;
+			background-color: #F0EBCE;
+			max-width: 500px;
+			height: 400px;
+			margin: auto;
+		}
+
+		input {
+			margin-bottom: 10px;
+			border: solid 1px #3B3017;
+			width: 500px;
+			height: 20px;
+		} 
+
+		select {
+			margin-bottom: 15px;
+			border: solid 1px #3B3017;
+			width: 500px;
+
+		}
+
+		button {
+			margin-top: 5px;
+			padding: 5px;
+			border: solid 3px #3B3017 ;
+			border-radius: 6px;
+			background-color: #A87F4B;
+			color: #3B3017;
+			font-size: 15px;
+		}
+
+		body {
+			background-image: url(land3.jpg);
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		.but {
+			text-align: center;
+		}
+
+		.header {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<h3 class="header">REGISTRATION</h3>
+			<label for="Name">Name: <br></label>
+			<input type="text" id="Name"><br>
+			<label for="Birthday">Birthday: <br></label>
+			<input type="date" id="Birthday"><br>
+			<label for="Gender">Gender: <br></label>
+				<select id="Gender">
+					<option value="Male">MALE</option>
+					<option value="Female">FEMALE</option>
+					<option value="Others">OTHERS</option>
+				</select><br>
+			<label for="Email">Email: <br></label>
+			<input type="email" id="Email"><br>
+			<label for="password1">Password: <br></label>
+			<input type="password" id="password1"><br>
+			<label for="password2">Confirm Password: <br></label>
+			<input type="password" id="password2"><br>
+			<div class="but">
+				<button type="Submit"><b>Submit</b></button>
+			</div>
+		</fieldset>
+	</form>
+	
+</body>
+</html>

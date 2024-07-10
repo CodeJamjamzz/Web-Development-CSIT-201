@@ -1,0 +1,122 @@
+.form-wrapper {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex;
+    margin-bottom: 50px;
+}
+
+.form-box {
+    background-color: white;
+    padding: 25px;
+    height: 670px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.gender_tag {
+    margin-top: 5px;
+}
+
+.gender_label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+}
+
+.gender_label input[type="radio"] {
+    display: inline;
+    float: left;
+}
+
+
+.form-box input[type="text"],
+.form-box input[type="password"], .form-box input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border: 1px solid #708090;
+}
+
+.form-box input[type="text"]:hover,
+.form-box input[type="password"]:hover {
+    border: 1px solid #c40010;
+}
+
+.form-box .text-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin-top: 7px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.form-box .text-wrapper .style-remember {
+    margin-left: 20px;
+}
+
+.form-box .text-wrapper .style-forgot-pass {
+    margin-left: 135px;
+}
+
+/* .form-box {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #0073e2;
+    color: white;
+    border: 2px solid #0073e2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+
+    
+} */
+
+button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: solid #215027 2px;
+    background-color: white; 
+    color: #3A1D0B;
+    width: 25%;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 100%;
+    width: 70%;
+}
+
+button:hover {
+    border: solid #215027 2px;
+    background-color: #215027; 
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.gender-options {
+    margin-bottom: 5px;
+}
+
+.gender-label {
+    margin-right: 10px;
+}
+
+/* .form-box button:hover {
+    background-color: #0a87ff;
+    color: white;
+    border: 2px solid #0a87ff;
+} */

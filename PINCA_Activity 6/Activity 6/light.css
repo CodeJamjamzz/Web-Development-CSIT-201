@@ -1,0 +1,109 @@
+.background {
+    background-color: #DFDFDF;
+    transition: all 0.3s ease-in-out;
+}
+
+.background2 {
+    background-color: #404040;
+    transition: all 0.3s ease-in-out;
+}
+
+button {  
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+
+
+.style2 {
+    border: solid #173149 3.5px;
+    color: black;
+    background-color: #3AB8FD;
+}
+
+.style {
+    border: solid #1C4F27 3.5px;
+    background-color: #04AA6D;
+    color: black;
+}
+
+.style:hover {
+    background-color: #1C4F27;
+    color: white;
+}
+
+.style2:hover {
+    background-color: #173149;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+    button {
+        left: 38%;
+        right: 38%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    button {
+        left: 35%;
+        right: 35%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    button {
+        left: 30%;
+        right: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    button {
+        left: 25%;
+        right: 25%;
+    }
+}
+
+
+
+
+
+/* body {
+    background-color: #404040;
+}
+
+button {
+    border: solid #173149 3.5px;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: #3AB8FD;
+    color: black;
+}
+
+button:hover {
+    background-color: #173149;
+    color: white;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+} */

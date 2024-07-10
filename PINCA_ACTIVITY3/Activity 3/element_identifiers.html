@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity 3</title>
+	<style type="text/css">
+		.word {
+			font-family: Arial;
+			color: #f2f2f2;
+			height: 45px;
+		}
+
+		.word2 {
+			font-family: Arial;
+			color: blue;
+		}
+
+		td {
+			font-size: 20px;
+		}
+
+		tr {
+			text-align: center;
+			font-family: Arial;
+		}
+
+		.odd{
+			background-color: #f2f2f2;
+		}
+
+		#table {
+			border-width: 1px; 
+			width: 1000px; 
+			margin-left: auto;
+			margin-right: auto;
+			border-style: solid;
+			border-color: #f8f8f8;
+		}
+
+		#title {
+			text-align: center; 
+			font-family: Arial;
+			font-size: 25px;
+			margin-left: 40px;
+			margin-bottom: 25px;
+		}
+
+		#row1 {
+			background-color: #333; 
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+
+		#row2 {
+			background-color: #333; 
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<br><br>
+	<h2 id="title">Summary of Student Grades</h2>
+	<div>
+	<table border = "0" align="center" id="table">
+		<tr id="row1">
+			<th rowspan = "2" class="word">Student no.</th>
+			<th colspan = "2" class="word">Student Name</th>
+			<th colspan = "3" class="word">Subject Grade</th>
+			<th rowspan = "2" class="word">Average</th>
+		</tr>
+
+		<tr id="row2">
+			<th class="word">Last Name</th>
+			<th class="word">First Name</th>
+			<th class="word">Math</th>
+			<th class="word">Science</th>
+			<th class="word">English</th>
+		</tr>
+
+		<tr class="odd">
+			<td class="word2">
+				<b>000-0001</b>
+			</td>
+				
+			<td>
+				Smith 
+			</td>
+			<td>
+				John
+			</td>
+
+			<td>90</td>
+			<td>85</td>
+			<td>95</td>
+
+			<td>87.5</td>
+
+		</tr>
+
+		<tr>
+			<td class="word2">
+				<b>000-0002</b>
+			</td>
+			<td>
+				Collins
+			</td>
+
+			<td>
+				Mary
+			</td>
+
+			<td>88</td>
+			<td>92</td>
+			<td>89</td>
+
+			<td>89.67</td>
+
+		</tr>
+
+		<tr class="odd">
+			<td class="word2">
+				<b>000-0003</b>
+			</td>
+			<td>
+				Smith 
+			</td>
+
+			<td>
+				Robert
+			</td>
+
+			<td>78</td>
+			<td>80</td>
+			<td>85</td>
+
+			<td>81</td>
+	</table>
+	</div>
+</body>
+</html>

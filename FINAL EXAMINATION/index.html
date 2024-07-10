@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINCA_FINAL_EXAMINATION</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL CSS STYLES -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+    <style>
+        /* Error message style */
+        .error-msg {
+            color: red;
+            margin-bottom: 5px;
+        }
+
+        /* Red border for inputs with errors */
+        .error-input {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="title-wrapper">
+            <h2>User Registration Form</h2>
+            <p>Or <a href="#">already have an account?</a></p>
+        </div>
+
+        <form class="form-wrapper form-box" method="POST" action="login.php" onsubmit="return validateForm()">
+            <!-- NAME -->
+            <label for="firstname" class="form-label">Firstname</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Name">
+            <small id="firstname-error" class="error-msg"></small>
+
+            <label for="lastname" class="form-label">Lastname</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Name">
+            <small id="lastname-error" class="error-msg"></small>
+
+            <!-- BIRTHDAY -->
+            <label for="birthday" class="form-label">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <small id="birthday-error" class="error-msg"></small>
+
+            <!-- GENDER -->
+            <label class="form-label">Gender:</label>
+            <div class="gender-options">
+                <input type="radio" name="gender" id="gender-male" value="male">
+                <label for="gender-male" class="gender-label">Male</label>
+
+                <input type="radio" name="gender" id="gender-female" value="female">
+                <label for="gender-female" class="gender-label">Female</label>
+
+                <input type="radio" name="gender" id="gender-other" value="other">
+                <label for="gender-other" class="gender-label">Other</label>
+            </div>
+            <small id="gender-error" class="error-msg"></small>
+
+            <!-- EMAIL -->
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" id="email" name="email">
+            <small id="email-error" class="error-msg"></small>
+
+            <!-- PASSWORD -->
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" name="password" id="password">
+            <small id="password-error" class="error-msg"></small>
+
+            <label for="cpassword" class="form-label">Confirm Password:</label>
+            <input type="password" name="cpassword" id="cpassword">
+            <small id="cpassword-error" class="error-msg"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <script>
+        function validateForm() {
+            var firstname = document.getElementById('firstname').value.trim();
+            var lastname = document.getElementById('lastname').value.trim();
+            var birthday = document.getElementById('birthday').value.trim();
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var cpassword = document.getElementById('cpassword').value.trim();
+
+            var isValid = true;
+
+            // Check if input values are not empty
+            if (firstname === '') {
+                document.getElementById('firstname-error').textContent = 'First name cannot be empty.';
+                document.getElementById('firstname').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('firstname-error').textContent = '';
+                document.getElementById('firstname').classList.remove('error-input');
+            }
+
+            if (lastname === '') {
+                document.getElementById('lastname-error').textContent = 'Last name cannot be empty.';
+                document.getElementById('lastname').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('lastname-error').textContent = '';
+                document.getElementById('lastname').classList.remove('error-input');
+            }
+
+            if (birthday === '') {
+                document.getElementById('birthday-error').textContent = 'Birthday cannot be empty.';
+                document.getElementById('birthday').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('birthday-error').textContent = '';
+                document.getElementById('birthday').classList.remove('error-input');
+            }
+
+            if (!gender) {
+                document.getElementById('gender-error').textContent = 'Please select a gender.';
+                isValid = false;
+            } else {
+                document.getElementById('gender-error').textContent = '';
+            }
+
+            if (email === '') {
+                document.getElementById('email-error').textContent = 'Email cannot be empty.';
+                document.getElementById('email').classList.add('error-input');
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+                document.getElementById('email').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('email-error').textContent = '';
+                document.getElementById('email').classList.remove('error-input');
+            }
+
+            if (password === '') {
+                document.getElementById('password-error').textContent = 'Password cannot be empty.';
+                document.getElementById('password').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('password-error').textContent = '';
+                document.getElementById('password').classList.remove('error-input');
+            }
+
+            if (cpassword === '') {
+                document.getElementById('cpassword-error').textContent = 'Confirm Password cannot be empty.';
+                document.getElementById('cpassword').classList.add('error-input');
+                isValid = false;
+            } else if (password !== cpassword) {
+                document.getElementById('cpassword-error').textContent = 'Passwords do not match.';
+                document.getElementById('cpassword').classList.add('error-input');
+                isValid = false;
+            } else {
+                document.getElementById('cpassword-error').textContent = '';
+                document.getElementById('cpassword').classList.remove('error-input');
+            }
+        }
+    </script>
+</body>
+
+</html>
