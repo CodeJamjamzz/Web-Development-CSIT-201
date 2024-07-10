@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0EBCE;
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wrapper {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title-wrapper h2 {
+    font-size: 32px;
+}
+
+.title-wrapper p {
+    font-size: 18px;
+}
+
+

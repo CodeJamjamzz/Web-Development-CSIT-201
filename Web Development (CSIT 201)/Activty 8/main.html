@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinca Activity_8</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="product.css" >
+</head>
+    <body>
+        <header class="head">
+            <img src="logo.jpg" alt="logo" class="logo" height="50px" width="50px">
+            <h1 class="title">GlowHaven Store</h1>
+
+            <nav>
+                <img src="search.png" alt="Search Icon" class="search-icon">
+                <input type="text" class="search-input" placeholder="Search">
+
+                <div class="categories">
+                    <div class="cate"><a href="#timer">Home</a></div>
+                    <div class="cate"><a href="#prod">Products</a></div>
+                    <div class="cate"><a href="#contact">Contact Details</a></div>
+                </div>
+
+                <img src="Profile-icon.jpg" alt="Search Icon" class="profile-icon" width="30px">
+            </nav>
+        </header>
+
+
+        <main class="pr">
+            <div class="timer" id="timer">
+                <h2 class="sale">SUMMER SALE</h2>
+                <section class="countdown">
+                    <!-- wrapper for the day -->
+                    <div class="timer_container">
+                        <p id="days">00</p>
+                        <p class="small">DAYS</p>
+                    </div>
+                    <!-- wrapper for the hours -->
+                    <div class="timer_container">
+                        <p id="hours">00</p>
+                        <p class="small">HOURS</p>
+                    </div>
+                    <!-- wrapper for the minutes -->
+                    <div class="timer_container">
+                        <p id="minutes">00</p>
+                        <p class="small">MINUTES</p>
+                    </div>
+                    <!-- wrapper for the seconds -->
+                    <div class="timer_container">
+                        <p id="seconds">00</p>
+                        <p class="small">SECONDS</p>
+                    </div>
+                </section>
+
+                <button class="order"><b>Order</b></button>
+            </div>
+        </main>
+
+        <article id="prod" class="prod">
+          <h3>PRODUCTS</h3>
+      </article>
+      
+      <div class="prod-cont">
+        
+        <section class="slider-wrap">
+            
+            <button id="prev-btn" class="slide-btn material-symbols-rounded"><</button>
+            
+            <ul class="img-list">
+                <li><div class="prod-img" ></div></li>
+                <li><img src="products/product3.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product2.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product4.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product6.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product7.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product8.jpg" class="prod-img" alt="product"></li>
+                <li><img src="products/product9.jpg" class="prod-img" alt="product"></li>
+            </ul>
+            
+            <button id="next-btn" class="slide-btn material-symbols-rounded">></button>
+        </section>
+      
+        
+        <section class="scroll-cont">
+            
+            <div class="scroll-track">
+                <div class="scroll-thumb"></div>
+            </div>
+        </section>
+      </div>
+
+      
+      </main>
+
+      <main class="contact">
+        <div id="contact" class="con">Contact us</div>
+
+        <div class="contact_tag">
+            <input type="text" id="Name" placeholder="Name" autocomplete="off">
+            <small class="error-message" id="FirstNameError"></small>
+
+            <input type="email" class="email" placeholder="Email">
+            <small class="error-message" id="EmailError"></small>
+        </div>
+        <div class="contact_tag">
+            <textarea class="message" placeholder="Message us your concerns "></textarea>
+            <small class="error-message" id="MessageError"></small>
+        </div>
+
+        <button id="submit" type="submit" class="sub">SUBMIT</button>
+
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" id="close">&times;</div>
+                    <h2>SUBMISSION COMPLETE</h2><br>
+                    <p>Your message has been submitted or emailed. Thank you!</p>
+                </div>
+            </div>
+        </main>
+
+    <footer class="foot">
+        <div>Email: Jamjam@gmail.com </div>
+        <div>Name: Jamiel Kyne Pinca </div> 
+        <div>Course/Section: BSCS - 1 (F1)</div></footer>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
